@@ -14,7 +14,7 @@ from models.amenity import Amenity
 
 
 class DBStorage:
-    """ create tables"""
+    """ create tables in environmental"""
     __engine = None
     __session = None
 
