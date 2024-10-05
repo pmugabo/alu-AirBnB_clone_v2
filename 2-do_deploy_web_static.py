@@ -5,7 +5,7 @@ from os.path import exists
 
 env.hosts = ['54.204.55.224', '54.211.15.50']
 env.user = "ubuntu"
-env.key = "~/.ssh/id_rsa"
+env.key = "~/.ssh/school"
 
 
 def do_deploy(archive_path):
@@ -26,4 +26,4 @@ def do_deploy(archive_path):
         run('ln -s {}/ /data/web_static/current'.format(path_name))
         return True
     except Exception:
-        return Falsee
+        return False
